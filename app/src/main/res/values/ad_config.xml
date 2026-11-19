@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    PRODUCTION AdMob configuration for List (letshangllc.list)
+
+    Publisher ID: ca-app-pub-8223005482588566
+    AdMob app name: List (no package linked in console)
+    Source: AdMob console export (CSV)
+
+    Debug builds override these with Google official test IDs via
+    app/src/debug/res/values/ad_config.xml.
+
+    Ad unit mapping:
+    ================
+    Screen / slot              | AdMob unit name       | Resource
+    MainActivity bottom banner | Banner Bottom main    | admob_banner_id
+-->
+<resources>
+    <!-- AdMob Application ID for "List" -->
+    <string name="admob_app_id">ca-app-pub-8223005482588566~5533638734</string>
+
+    <!-- MainActivity bottom banner ("Banner Bottom main") -->
+    <string name="admob_banner_id">ca-app-pub-8223005482588566/7010371931</string>
+</resources>

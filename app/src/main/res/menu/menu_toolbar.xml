@@ -1,14 +1,13 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
-xmlns:app="http://schemas.android.com/apk/res-auto"
-xmlns:tools="http://schemas.android.com/tools" tools:context="tracker.lift_log.DayActivity">
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="letshangllc.list.MainActivity">
 
     <item
         android:id="@+id/action_complete"
-        android:orderInCategory="100"
-        android:title="Complete"
         android:icon="@drawable/ic_check_white_36dp"
-        app:showAsAction="ifRoom"
-        ></item>
-
+        android:orderInCategory="100"
+        android:title="@string/action_complete"
+        app:showAsAction="ifRoom" />
 
 </menu>

@@ -2,6 +2,9 @@
 <resources>
     <string name="app_name">List Items</string>
     <string name="action_settings">Settings</string>
+    <string name="item_hint">Item</string>
+    <string name="add_item">+</string>
+    <string name="action_complete">Complete</string>
 
     <string name="cancel">CANCEL</string>
     <string name="TAG_ITEM">item_tag</string>
@@ -9,5 +12,4 @@
 
     <string name="preferences">UserPreferences</string>
     <string name="item_set">ShoppingItemsSet</string>
-
 </resources>

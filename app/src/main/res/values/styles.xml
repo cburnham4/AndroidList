@@ -1,15 +1,15 @@
 <resources>
 
-    <style name="MyMaterialTheme" parent="MyMaterialTheme.Base">
+    <style name="MyMaterialTheme" parent="MyMaterialTheme.Base" />
 
-    </style>
-
-    <style name="MyMaterialTheme.Base" parent="Theme.AppCompat.Light.DarkActionBar">
+    <style name="MyMaterialTheme.Base" parent="Theme.MaterialComponents.Light.DarkActionBar">
         <item name="windowNoTitle">true</item>
         <item name="windowActionBar">false</item>
         <item name="colorPrimary">@color/primary</item>
         <item name="colorPrimaryDark">@color/primaryDark</item>
         <item name="colorAccent">@color/primaryAccent</item>
+        <item name="android:statusBarColor">@color/primaryDark</item>
+        <item name="android:navigationBarColor">@color/primaryDark</item>
     </style>
 
 </resources>
