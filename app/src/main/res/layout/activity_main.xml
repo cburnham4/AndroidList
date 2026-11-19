@@ -1,59 +1,58 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/root_layout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-
     tools:context="letshangllc.list.MainActivity">
 
-    <include layout="@layout/toolbar"></include>
+    <include layout="@layout/toolbar" />
 
     <RelativeLayout
-        android:paddingTop="@dimen/activity_vertical_margin"
-        android:paddingLeft="@dimen/activity_vertical_margin"
-        android:paddingRight="@dimen/activity_vertical_margin"
-        android:layout_width="match_parent"
-        android:layout_below="@+id/toolbar"
         android:id="@+id/lin_inputItem"
-        android:layout_height="wrap_content">
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolbar"
+        android:paddingLeft="@dimen/activity_vertical_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:paddingRight="@dimen/activity_vertical_margin">
 
-        <android.support.design.widget.TextInputLayout
+        <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/input_layout_item"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_toLeftOf="@+id/tv_addItem"
-            >
+            android:layout_toStartOf="@+id/tv_addItem">
 
             <EditText
                 android:id="@+id/et_item"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="Item" />
+                android:hint="@string/item_hint"
+                android:importantForAutofill="no"
+                android:inputType="text" />
 
-        </android.support.design.widget.TextInputLayout>
+        </com.google.android.material.textfield.TextInputLayout>
 
         <TextView
-            android:layout_width="wrap_content"
-            android:textColor="@color/primaryDark"
             android:id="@+id/tv_addItem"
-            android:textSize="48sp"
-            android:layout_marginLeft="16dp"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="+"
             android:layout_alignParentEnd="true"
-            android:layout_alignParentRight="true"/>
+            android:layout_marginStart="16dp"
+            android:text="@string/add_item"
+            android:textColor="@color/primaryDark"
+            android:textSize="48sp" />
     </RelativeLayout>
 
-    <android.support.v7.widget.RecyclerView
+    <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/my_recycler_view"
         android:layout_width="match_parent"
-        android:layout_marginLeft="5dp"
-        android:layout_marginRight="5dp"
         android:layout_height="match_parent"
-        android:layout_below="@+id/lin_inputItem"
         android:layout_above="@+id/ad_layout"
-        />
+        android:layout_below="@+id/lin_inputItem"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp" />
 
-    <include layout="@layout/ad_layout"></include>
+    <include layout="@layout/ad_layout" />
 
 </RelativeLayout>

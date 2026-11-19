@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    AdMob configuration for List (letshangllc.list)
+
+    Publisher ID: ca-app-pub-8223005482588566
+
+    Real production unit IDs were not present in this repo (keys.xml / strings were
+    historically gitignored). Until you create units in AdMob Console, release builds
+    fall back to Google's official test IDs so the app can still build and run.
+
+    TODO(release): Replace every value below with real IDs from AdMob Console
+    (Apps → List → App settings / Ad units). Debug builds already override these
+    with the same official test IDs via app/src/debug/res/values/ad_config.xml.
+-->
+<resources>
+    <!-- TODO(release): Replace with real AdMob Application ID for publisher ca-app-pub-8223005482588566 -->
+    <string name="admob_app_id">ca-app-pub-3940256099942544~3347511713</string>
+
+    <!-- TODO(release): Replace with real banner ad unit ID for MainActivity -->
+    <string name="admob_banner_id">ca-app-pub-3940256099942544/6300978111</string>
+</resources>
